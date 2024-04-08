@@ -37,7 +37,7 @@
 	} else {
 		?>
 		<div class="truncate-4">
-			<?php aquila_the_excerpt( 200 ); ?>
+			<?php aquila_the_excerpt( 180 ); ?>
 		</div>
 		<?php
 		echo aquila_excerpt_more();

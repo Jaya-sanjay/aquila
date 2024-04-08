@@ -30,13 +30,13 @@ get_header();
 					<div class="row">
 						<?php
 						$index         = 0;
-						$no_of_columns = 3;
+						$no_of_columns = 2;
 
 						while ( have_posts() ) : the_post();
 
 							if ( 0 === $index % $no_of_columns ) {
 								?>
-								<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="col-lg-6 col-md-6 col-sm-12">
 								<?php
 							}
 
@@ -51,6 +51,7 @@ get_header();
 							}
 
 						endwhile;
+						aquila_pagination();
 						?>
 					</div>
 				</div>
@@ -62,7 +63,7 @@ get_header();
 
 			endif;
 
-			aquila_pagination();
+			
 			?>
 		</main>
 	</div>
